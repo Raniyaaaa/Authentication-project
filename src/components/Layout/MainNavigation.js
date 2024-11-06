@@ -11,7 +11,7 @@ const MainNavigation = () => {
 
   const logoutHandler=()=>{
     authCtx.logout();
-    
+    history.replace('/auth')
   }
 
   const authCtx=useContext(AuthContext)
